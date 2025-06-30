@@ -1,0 +1,34 @@
+name: Run Vosk Parser Weekly
+
+on:
+  schedule:
+    - cron: '0 7 * * 1'  # каждый понедельник в 07:00 UTC
+  workflow_dispatch:
+
+jobs:
+  parse:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run parser script
+        run: python parse_vosk_models.py
+
+      - name: Commit and push result
+        run: |
+          git config --global user.name "AIgrator"
+          git config --global user.email "aigrator@gmail.com"
+          git add vosk_models.json
+          git commit -m "Update vosk_models.json [auto]" || echo "No changes"
+          git push
