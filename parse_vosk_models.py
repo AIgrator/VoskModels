@@ -19,8 +19,13 @@ def parse_vosk_models():
         return
     rows = table_body.find_all('tr')
     models_list = []
+    current_title = None
     for row in rows:
         cells = row.find_all('td')
+        # Detect language title row (first cell is <strong> and no link)
+        if len(cells) > 0 and cells[0].find('strong') and not cells[0].find('a'):
+            current_title = cells[0].get_text(strip=True)
+            continue
         if len(cells) < 2:
             continue
         link_tag = cells[0].find('a')
@@ -46,7 +51,8 @@ def parse_vosk_models():
                 "wer": wer_text,
                 "notes": notes_text,
                 "download_url": download_url,
-                "license": license_text
+                "license": license_text,
+                "title": current_title
             }
             models_list.append(model_data)
         except Exception as e:
