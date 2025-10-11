@@ -540,22 +540,22 @@
         "title": "Ukrainian"
     },
     {
-        "name": "vosk-model-small-kz-0.15",
+        "name": "vosk-model-small-kz-0.42",
         "language": "kz",
-        "size": "42M",
-        "wer": "9.60(dev) 8.32(test)",
-        "notes": "Small mobile model from SAIDA_Kazakh",
-        "download_url": "https://alphacephei.com/vosk/models/vosk-model-small-kz-0.15.zip",
+        "size": "58M",
+        "wer": "21.10 (fleurs) 30.0 (CV17) 9.7 (KSC) 24.86 (KSC Other)",
+        "notes": "Small mobile model for Kazakh",
+        "download_url": "https://alphacephei.com/vosk/models/vosk-model-small-kz-0.42.zip",
         "license": "Apache 2.0",
         "title": "Kazakh"
     },
     {
-        "name": "vosk-model-kz-0.15",
+        "name": "vosk-model-kz-0.42",
         "language": "kz",
-        "size": "378M",
-        "wer": "8.06(dev) 6.81(test)",
-        "notes": "Bigger wideband model SAIDA_Kazakh",
-        "download_url": "https://alphacephei.com/vosk/models/vosk-model-kz-0.15.zip",
+        "size": "1.3G",
+        "wer": "13.09 (fleurs) 12.50 (CV17) 4.49 (KSC) 18.51 (KSC Other)",
+        "notes": "Bigger model for Kazakh",
+        "download_url": "https://alphacephei.com/vosk/models/vosk-model-kz-0.42.zip",
         "license": "Apache 2.0",
         "title": "Kazakh"
     },
@@ -718,6 +718,26 @@
         "download_url": "https://alphacephei.com/vosk/models/vosk-model-small-te-0.42.zip",
         "license": "Apache 2.0",
         "title": "Telugu"
+    },
+    {
+        "name": "vosk-model-small-ky-0.42",
+        "language": "ky",
+        "size": "49M",
+        "wer": "18.95 (Fleurs) 16.96 (CV17)",
+        "notes": "Small mobile model for Kyrgyz",
+        "download_url": "https://alphacephei.com/vosk/models/vosk-model-small-ky-0.42.zip",
+        "license": "Apache 2.0",
+        "title": "Kyrgyz"
+    },
+    {
+        "name": "vosk-model-ky-0.42",
+        "language": "ky",
+        "size": "1.1G",
+        "wer": "13.45 (Fleurs) 8.75 (CV17)",
+        "notes": "Bigger model for Kyrgyz",
+        "download_url": "https://alphacephei.com/vosk/models/vosk-model-ky-0.42.zip",
+        "license": "Apache 2.0",
+        "title": "Kyrgyz"
     },
     {
         "name": "vosk-model-spk-0.4",
