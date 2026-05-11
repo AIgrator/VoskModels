@@ -740,6 +740,26 @@
         "title": "Kyrgyz"
     },
     {
+        "name": "vosk-model-small-ka-0.42",
+        "language": "ka",
+        "size": "45M",
+        "wer": "18.0 (Fleurs) 14.2 (CV17)",
+        "notes": "Small mobile model for Georgian",
+        "download_url": "https://alphacephei.com/vosk/models/vosk-model-small-ka-0.42.zip",
+        "license": "Apache 2.0",
+        "title": "Georgian"
+    },
+    {
+        "name": "vosk-model-ka-0.42",
+        "language": "ka",
+        "size": "700M",
+        "wer": "12.7 (Fleurs) 5.2 (CV17)",
+        "notes": "Bigger model for Georgian",
+        "download_url": "https://alphacephei.com/vosk/models/vosk-model-ka-0.42.zip",
+        "license": "Apache 2.0",
+        "title": "Georgian"
+    },
+    {
         "name": "vosk-model-spk-0.4",
         "language": "unknown",
         "size": "13M",
